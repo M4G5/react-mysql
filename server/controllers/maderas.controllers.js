@@ -9,6 +9,7 @@ export const updateMaderas = (req, res) => {
 }
 export const createMaderas = (req, res) => {
     console.log(req.body);
+    const {title,description} = req.body;
     res.send('creando registro madera');
 }
 export const deleteMaderas = (req, res) => {
